@@ -1,145 +1,16 @@
 <!DOCTYPE html>
-<html lang = "en">
-  <title>Testing Webpage Title</title>
-  <meta charset = "UTF-8">
-  <meta name = "viewport" content = "width=device-width,initial-scale=1">
-  <style>
-    *{
-      box-sizing:border-box;
-    }
-    /*style for the body*/
-    body{
-      font-family: Arial,Helvetica,sans-serif;
-      margin: 0;
-    }
-    /*Header/website logo title part */
-    .header{
-      padding:200px
-        text-align: center;
-      background: #800080;
-      color: white;
-    }
-    .header h1{
-      font-size:40px;
-    }
-    /*style the top nav bar*/
-    .navbar {
-      overflow : hidden;
-      background-color: #333;
-    }
-    /*style in the nav bar links/buttons (the ones for the 3 parts) */
-    .navbar a{
-      float:left;
-      display: block;
-      color: white;
-      text-align: center;
-      padding:14px 20px; /*creates a rectangle for each element*/
-      text-decoration:none;
-    }
-    
-    /*Right aligned link*/
-    .navbar a.right{
-      float:right;
-    }
-    /*change color on hover*/
-    .navbar a:hover{
-      background-color : #ddd;
-      color:black;
-    }
-    
-    /*column container*/
-    .row{
-    display: -ms-flexbox;
-      display:flex;
-      -ms-flex-wrap: wrap;
-      flex-wrap:wrap;
-    }
-    /*create 2 unequal columns that sit next to each other*/
-    /*sidebar/left column*/
-    .side{
-      -ms-flex:30%;
-      flex:30%;
-      background-color: #f1f1f1;
-      padding: 20px;
-    }
-    
-    /*main column */
-    .main{
-    -ms-flex:70%;
-      flex:70%;
-      background-color:white;
-      padding:20px;
-    }
-    /*fake image*/
-    .fakeimg{
-      background-color : #aaa;
-      width: 100%;
-      padding: 20px;
-    }
-    /*footer*/
-    .footer{
-      padding:20px;
-      text-align:center;
-      background:#ddd;
-    }
-   /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 700px) {
-  .row {   
-    flex-direction: column;
-  }
-}
+<html>
+<title>The Software Dev Blog</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head >
+<h1 ><center> Testing the head</center></h1>
+</head>
+<body bgcolor="#ddd" >
 
-/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-@media screen and (max-width: 400px) {
-  .navbar a {
-    float: none;
-    width: 100%;
-  }
-} 
-   </style>
-  </head>
-<body>
-  
-  <div class="header">
-    <h1>There can be only one!</h1>
-    <p>A website created by me.</p>
-    </div>
-  <div class="navbar">
-    <a href="#">Link1</a>
-    <a href="#">Link2</a>
-    <a href="#">Link3</a>
-    <a href="#" class="right">Link4</a>
-    </div>
-  <div class="row">
-    <div class="side">
-      <h2>About Me</h2>
-      <h5>Photo of me:<h5>
-        <div class="fakeimg" style="height:200px">Image</div>
-        <p>Some text about me </p>
-        <h3>More text</h3>
-        <p>some more text of personal stuff</p>
-        <div class="fakeimg" style="height:60px;">Image</div><br>
-    <div class="fakeimg" style="height:60px;">Image</div><br>
-    <div class="fakeimg" style="height:60px;">Image</div>
-  </div>
-  <div class="main">
-    <h2>TITLE of BLOG</h2>
-    <h5>BLOG description, Feb 12, 2020</h5>
-    <div class="fakeimg" style="height:200px;">Image</div>
-    <p>Some text..</p>
-    <p>Larger text blocks 1</p>
-    <br>
-    <h2>TITLE of BLOG</h2>
-    <h5>BLOG description, Feb 12, 2020</h5>
-    <div class="fakeimg" style="height:200px;">Image</div>
-    <p>Some text..</p>
-    <p>Larger text block</p>
-  </div>
-</div>
+<h1>My First Heading</h1>
 
-<div class="footer">
-  <h2>Footer</h2>
-</div>
+<p>My first paragraph.</p>
 
 </body>
-  <html>
+</html>
