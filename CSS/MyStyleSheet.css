@@ -1,7 +1,7 @@
 ﻿/* myStyleSheet.css */
 body {
  margin :0;
- background : #736f73 ;
+ background : #d6d6d6 ;
 }
 .header {
 	padding : 120px;
@@ -33,6 +33,7 @@ p {
 	 font-size : 16px;
 	 color: black;
 	 text-align: left;
+	 font-weight : bold;
 }
 
 /* Sets default color of the topnav_bar */
