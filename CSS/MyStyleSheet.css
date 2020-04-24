@@ -115,5 +115,15 @@ p {
 	padding : 0px 10px;
 }
 
+.footer {
+	text-align:left;
+	position : fixed;
+	left : 0px;
+	bottom : 0px;
+	width : 100%;
+	background-color : #40024d;
+	color : white;
+	
+}
 
 
