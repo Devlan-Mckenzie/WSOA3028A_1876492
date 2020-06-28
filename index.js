@@ -14,4 +14,4 @@ let TheoryButton = document.getElementsByClassName("TheoryButton")[0];
 if (TheoryButton != null){
     TheoryButton.style.cursor = "pointer";
     TheoryButton.addEventListener("click",function(){ location.href = "../../../../../WSOA3028A_1876492/Theory/Theory.html" ; });
-}
+}   
