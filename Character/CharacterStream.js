@@ -38,7 +38,7 @@ fetch('../Character/Images/GitHub.png')
 
 
 
-const image = document.getElementById('Image_Covid19_1');
+ image = document.getElementById('Image_Covid19_1');
 
 // Fetch the original image
 fetch('../Character/Images/Covid19.png')
@@ -78,7 +78,7 @@ fetch('../Character/Images/Covid19.png')
 
 
 
-const image = document.getElementById('Image_Covid19_2');
+ image = document.getElementById('Image_Covid19_2');
 
 // Fetch the original image
 fetch('../Character/Images/Covid19Week2.png')
@@ -116,7 +116,7 @@ fetch('../Character/Images/Covid19Week2.png')
 .then(url => image.src = url)
 .catch(console.error);
 
-const image = document.getElementById('Image_Covid19_3');
+ image = document.getElementById('Image_Covid19_3');
 
 // Fetch the original image
 fetch('../Character/Images/Covid19Week3.png')
@@ -156,7 +156,7 @@ fetch('../Character/Images/Covid19Week3.png')
 
 
 
-const image = document.getElementById('Image_Character');
+ image = document.getElementById('Image_Character');
 
 // Fetch the original image
 fetch('../Character/Images/CharacterRationale.png')
@@ -195,7 +195,7 @@ fetch('../Character/Images/CharacterRationale.png')
 .catch(console.error);
 
 
-const image = document.getElementById('Image_WireFrame');
+ image = document.getElementById('Image_WireFrame');
 
 // Fetch the original image
 fetch('../Character/Images/WireFrame.png')
@@ -236,7 +236,7 @@ fetch('../Character/Images/WireFrame.png')
 
 
 
-const image = document.getElementById('Image_StyleGuide');
+ image = document.getElementById('Image_StyleGuide');
 
 // Fetch the original image
 fetch('../Character/Images/ColourPallet.png')
@@ -277,7 +277,7 @@ fetch('../Character/Images/ColourPallet.png')
 
 
 
-const image = document.getElementById('Image_CharacterDescription');
+ image = document.getElementById('Image_CharacterDescription');
 
 // Fetch the original image
 fetch('../Character/Images/CharacterDescription.png')
@@ -319,7 +319,7 @@ fetch('../Character/Images/CharacterDescription.png')
 
 
 
-const image = document.getElementById('Image_JavaScript');
+ image = document.getElementById('Image_JavaScript');
 
 // Fetch the original image
 fetch('../Character/Images/JavaScript.png')
@@ -360,7 +360,7 @@ fetch('../Character/Images/JavaScript.png')
 
 
 
-const image = document.getElementById('Image_Graham');
+ image = document.getElementById('Image_Graham');
 
 // Fetch the original image
 fetch('../Character/Images/ResearchPaper.png')
