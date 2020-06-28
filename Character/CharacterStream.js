@@ -1,4 +1,4 @@
- image = document.getElementById('Image_GitHub');
+const image1 = document.getElementById('Image_GitHub');
 
 // Fetch the original image
 fetch('../Character/Images/GitHub.png')
@@ -33,12 +33,12 @@ fetch('../Character/Images/GitHub.png')
 .then(response => response.blob())
 .then(blob => URL.createObjectURL(blob))
 // Update image
-.then(url => image.src = url)
+.then(url => image1.src = url)
 .catch(console.error);
 
 
 
- image = document.getElementById('Image_Covid19_1');
+ const image2 = document.getElementById('Image_Covid19_1');
 
 // Fetch the original image
 fetch('../Character/Images/Covid19.png')
@@ -73,12 +73,12 @@ fetch('../Character/Images/Covid19.png')
 .then(response => response.blob())
 .then(blob => URL.createObjectURL(blob))
 // Update image
-.then(url => image.src = url)
+.then(url => image2.src = url)
 .catch(console.error);
 
 
 
- image = document.getElementById('Image_Covid19_2');
+ const image3 = document.getElementById('Image_Covid19_2');
 
 // Fetch the original image
 fetch('../Character/Images/Covid19Week2.png')
@@ -113,10 +113,10 @@ fetch('../Character/Images/Covid19Week2.png')
 .then(response => response.blob())
 .then(blob => URL.createObjectURL(blob))
 // Update image
-.then(url => image.src = url)
+.then(url => image3.src = url)
 .catch(console.error);
 
- image = document.getElementById('Image_Covid19_3');
+ const image4 = document.getElementById('Image_Covid19_3');
 
 // Fetch the original image
 fetch('../Character/Images/Covid19Week3.png')
@@ -151,12 +151,12 @@ fetch('../Character/Images/Covid19Week3.png')
 .then(response => response.blob())
 .then(blob => URL.createObjectURL(blob))
 // Update image
-.then(url => image.src = url)
+.then(url => image4.src = url)
 .catch(console.error);
 
 
 
- image = document.getElementById('Image_Character');
+ const image5 = document.getElementById('Image_Character');
 
 // Fetch the original image
 fetch('../Character/Images/CharacterRationale.png')
@@ -191,11 +191,11 @@ fetch('../Character/Images/CharacterRationale.png')
 .then(response => response.blob())
 .then(blob => URL.createObjectURL(blob))
 // Update image
-.then(url => image.src = url)
+.then(url => image5.src = url)
 .catch(console.error);
 
 
- image = document.getElementById('Image_WireFrame');
+ const image6 = document.getElementById('Image_WireFrame');
 
 // Fetch the original image
 fetch('../Character/Images/WireFrame.png')
@@ -230,13 +230,13 @@ fetch('../Character/Images/WireFrame.png')
 .then(response => response.blob())
 .then(blob => URL.createObjectURL(blob))
 // Update image
-.then(url => image.src = url)
+.then(url => image6.src = url)
 .catch(console.error);
 
 
 
 
- image = document.getElementById('Image_StyleGuide');
+ const image7 = document.getElementById('Image_StyleGuide');
 
 // Fetch the original image
 fetch('../Character/Images/ColourPallet.png')
@@ -271,13 +271,13 @@ fetch('../Character/Images/ColourPallet.png')
 .then(response => response.blob())
 .then(blob => URL.createObjectURL(blob))
 // Update image
-.then(url => image.src = url)
+.then(url => image7.src = url)
 .catch(console.error);
 
 
 
 
- image = document.getElementById('Image_CharacterDescription');
+ const image8 = document.getElementById('Image_CharacterDescription');
 
 // Fetch the original image
 fetch('../Character/Images/CharacterDescription.png')
@@ -312,14 +312,14 @@ fetch('../Character/Images/CharacterDescription.png')
 .then(response => response.blob())
 .then(blob => URL.createObjectURL(blob))
 // Update image
-.then(url => image.src = url)
+.then(url => image8.src = url)
 .catch(console.error);
 
 
 
 
 
- image = document.getElementById('Image_JavaScript');
+ const image9 = document.getElementById('Image_JavaScript');
 
 // Fetch the original image
 fetch('../Character/Images/JavaScript.png')
@@ -354,13 +354,13 @@ fetch('../Character/Images/JavaScript.png')
 .then(response => response.blob())
 .then(blob => URL.createObjectURL(blob))
 // Update image
-.then(url => image.src = url)
+.then(url => image9.src = url)
 .catch(console.error);
 
 
 
 
- image = document.getElementById('Image_Graham');
+ const image10 = document.getElementById('Image_Graham');
 
 // Fetch the original image
 fetch('../Character/Images/ResearchPaper.png')
@@ -395,5 +395,5 @@ fetch('../Character/Images/ResearchPaper.png')
 .then(response => response.blob())
 .then(blob => URL.createObjectURL(blob))
 // Update image
-.then(url => image.src = url)
+.then(url => image10.src = url)
 .catch(console.error);
