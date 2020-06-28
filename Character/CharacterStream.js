@@ -1,4 +1,4 @@
-const image = document.getElementById('Image_GitHub');
+ image = document.getElementById('Image_GitHub');
 
 // Fetch the original image
 fetch('../Character/Images/GitHub.png')
