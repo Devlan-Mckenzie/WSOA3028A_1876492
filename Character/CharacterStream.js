@@ -517,3 +517,41 @@ fetch('../Character/Images/Yamakado.png')
 // Update image
 .then(url => image13.src = url)
 .catch(console.error);
+
+const image14 = document.getElementById('Image_Picanha');
+
+// Fetch the original image
+fetch('../Character/Images/Picanha.png')
+// Retrieve its body as ReadableStream
+.then(response => response.body)
+.then(rs => {
+  const reader = rs.getReader();
+
+  return new ReadableStream({
+    async start(controller) {
+      while (true) {
+        const { done, value } = await reader.read();
+
+        // When no more data needs to be consumed, break the reading
+        if (done) {
+          break;
+        }
+
+        // Enqueue the next data chunk into our target stream
+        controller.enqueue(value);
+      }
+
+      // Close the stream
+      controller.close();
+      reader.releaseLock();
+    }
+  })
+})
+// Create a new response out of the stream
+.then(rs => new Response(rs))
+// Create an object URL for the response
+.then(response => response.blob())
+.then(blob => URL.createObjectURL(blob))
+// Update image
+.then(url => image14.src = url)
+.catch(console.error);
