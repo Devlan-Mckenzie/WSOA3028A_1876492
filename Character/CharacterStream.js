@@ -438,3 +438,42 @@ fetch('../Character/Images/Streaming.png')
 // Update image
 .then(url => image11.src = url)
 .catch(console.error);
+
+
+const image12 = document.getElementById('Image_Graham2');
+
+// Fetch the original image
+fetch('../Character/Images/Research-Papers.png')
+// Retrieve its body as ReadableStream
+.then(response => response.body)
+.then(rs => {
+  const reader = rs.getReader();
+
+  return new ReadableStream({
+    async start(controller) {
+      while (true) {
+        const { done, value } = await reader.read();
+
+        // When no more data needs to be consumed, break the reading
+        if (done) {
+          break;
+        }
+
+        // Enqueue the next data chunk into our target stream
+        controller.enqueue(value);
+      }
+
+      // Close the stream
+      controller.close();
+      reader.releaseLock();
+    }
+  })
+})
+// Create a new response out of the stream
+.then(rs => new Response(rs))
+// Create an object URL for the response
+.then(response => response.blob())
+.then(blob => URL.createObjectURL(blob))
+// Update image
+.then(url => image12.src = url)
+.catch(console.error);
