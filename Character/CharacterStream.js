@@ -404,7 +404,7 @@ fetch('../Character/Images/ResearchPaper.png')
 const image11 = document.getElementById('Image_Stream');
 
 // Fetch the original image
-fetch('../Character/Images/ResearchPaper.png')
+fetch('../Character/Images/Streaming.png')
 // Retrieve its body as ReadableStream
 .then(response => response.body)
 .then(rs => {
